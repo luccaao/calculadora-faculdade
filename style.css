@@ -9,11 +9,21 @@ body {
     background: rgb(214, 189, 189);
 }
 
+.resultado {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    
+}
+
 .container {
     
-    height: 60vh;
+    height: 70vh;
     border-radius: 30px;
-    width: 25%;
+    width: 28%;
     background: rgb(0, 0, 0);
     box-shadow: 20px 20px 2px rgb(65, 67, 68);
 
@@ -22,21 +32,46 @@ body {
 }
 
 .conteudo-resultado {
-    display: flex;
-    background: rgb(233, 127, 7);
+    display: flex; 
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgb(255, 136, 0);
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+   
     border-radius: 10px 10px 0 0 ;
-    justify-content: space-between;
+    
     
     
 }
 
 .ac {
-    align-self: flex-start;
     margin-left: 65px;
-        cursor: pointer;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    
+    
+    
+
+}
+
+.ac2 {
+    z-index: 0;
+    position: absolute;
+    left: 678px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.espaço {
+    background: rgb(255, 255, 255);
+    box-shadow: inset 5px 5px 20px black;
+    border-radius: 10px;
+    display: flex;
+     
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -45,7 +80,7 @@ span {
     
     margin-right: 80px;
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
     
     
     
@@ -67,6 +102,7 @@ header{
     justify-content:center ;
     align-items: center;
     display: flex;
+    
 }
 
 li {

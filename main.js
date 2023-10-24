@@ -1,8 +1,8 @@
-function adicionar (num) {
+function adicionar (number) {
     
     var numero = document.querySelector('.resultado').innerHTML;
 
-    document.querySelector(".resultado").innerHTML = numero + num
+    document.querySelector(".resultado").innerHTML = numero + number
 
 }
 
@@ -16,7 +16,7 @@ function calcular() {
     var resultado = document.querySelector('.resultado').innerHTML;
     if(resultado) {
         document.querySelector(".resultado").innerHTML = eval(resultado)
-        
+
     }
 }
 
