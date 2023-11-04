@@ -13,14 +13,15 @@ body {
     display: flex;
     justify-content: end;
     margin-right: 10px;
-    width: 300px;
+    width:15rem;
     height: 50px;
     align-items: center;
     
 }
 
 .container {
-    
+    display: flex;
+    flex-direction: column;
     height: 70vh;
     border-radius: 30px;
     width: 28%;
@@ -33,9 +34,9 @@ body {
 
 .conteudo-resultado {
     display: flex; 
-    
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-left: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background: rgb(255, 136, 0);
     width: 100%;
    
@@ -56,20 +57,12 @@ body {
 
 }
 
-.ac2 {
-    z-index: 0;
-    position: absolute;
-    left: 678px;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-}
 
 .espaço {
     background: rgb(255, 255, 255);
     box-shadow: inset 5px 5px 20px black;
     border-radius: 10px;
     display: flex;
-     
     justify-content: flex-end;
     align-items: center;
 }
@@ -87,7 +80,7 @@ span {
     
 }
 
-header{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +101,7 @@ header{
 li {
     border-radius: 40px;
     padding: 40px;
-    gap: 10px;
+    
     color: rgb(255, 255, 255);
     background: orange;
      background: rgb(51, 51, 51); 
@@ -126,4 +119,22 @@ li {
 li:active {
     background: rgb(116, 114, 114); 
 
+}
+
+@media screen and (max-width: 1366px) {
+    .resultado {
+        width: 8rem;
+    }
+    li{
+        padding: 30px; 
+         
+    }
+    .container {
+        height: 90vh;
+        
+    }
+
+
+
+   
 }
