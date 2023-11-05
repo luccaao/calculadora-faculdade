@@ -1,23 +1,29 @@
-function adicionar (number) {
-    
-    var numero = document.querySelector('.resultado').innerHTML;
+let displayValue = "";
 
-    document.querySelector(".resultado").innerHTML = numero + number
-
+function add(value) {
+  displayValue += value;
+  document.querySelector(".resultado").textContent = displayValue;
 }
 
 const apagar = document.querySelector(".ac");
+const aparecerErro = document.querySelector(".teste");
 
 apagar.addEventListener("click", () => {
-    document.querySelector(".resultado").innerHTML = ""
-})
+  displayValue = "";
+  document.querySelector(".resultado").textContent = "0";
+  aparecerErro.classList.add("hidden");
+});
 
 function calcular() {
-    var resultado = document.querySelector('.resultado').innerHTML;
-    if(resultado) {
-        document.querySelector(".resultado").innerHTML = eval(resultado)
-
+  try {
+    displayValue = eval(displayValue);
+    document.querySelector(".resultado").textContent = displayValue;
+  } catch (error) {
+    
+    if (error) {
+      aparecerErro.classList.remove("hidden");
     }
+    const displayError = "Erro!";
+    document.querySelector(".resultado").textContent = displayError;
+  }
 }
-
-

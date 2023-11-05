@@ -14,38 +14,44 @@
                 
                 <div class="espaço">
                     <span class="resultado">
-
+                        0
                     </span>
+                    
                 </div>
             </div>
             
             <ul class="calc-lista">
-                <li class="numero" onclick="adicionar('7')">7</li>
-                <li class="numero" onclick="adicionar('8')">8</li>
-                <li class="numero" onclick="adicionar('9')">9</li>
-                <li class="mudar" onclick="adicionar('*')">*</li>
+                <li class="numero" onclick="add('7')">7</li>
+                <li class="numero" onclick="add('8')">8</li>
+                <li class="numero" onclick="add('9')">9</li>
+                <li class="mudar" onclick="add('*')">*</li>
             </ul>
             <ul class="calc-lista">
-                <li class="numero" onclick="adicionar('4')">4</li>
-                <li class="numero" onclick="adicionar('5')">5</li>
-                <li class="numero" onclick="adicionar('6')">6</li>
-                <li class="mudar" onclick="adicionar('-')">-</li>
+                <li class="numero" onclick="add('4')">4</li>
+                <li class="numero" onclick="add('5')">5</li>
+                <li class="numero" onclick="add('6')">6</li>
+                <li class="mudar" onclick="add('-')">-</li>
             </ul>
             <ul class="calc-lista">
-                <li class="numero" onclick="adicionar('1')">1</li>
-                <li class="numero" onclick="adicionar('2')">2</li>
-                <li class="numero" onclick="adicionar('3')">3</li>
-                <li class="mudar" onclick="adicionar('+')">+</li>
+                <li class="numero" onclick="add('1')">1</li>
+                <li class="numero" onclick="add('2')">2</li>
+                <li class="numero" onclick="add('3')">3</li>
+                <li class="mudar" onclick="add('+')">+</li>
             </ul>
             <ul class="calc-lista">
-                <li class="numero" onclick="adicionar('0')">0</li>
-                <li class="numero" onclick="adicionar('.')">,</li>
+                <li class="numero" onclick="add('0')">0</li>
+                <li class="numero" onclick="add('.')">,</li>
                 <li class="mudar" onclick="calcular()">=</li>
-                <li class="mudar" onclick="adicionar('/')">/</li>
+                <li class="mudar" onclick="add('/')">/</li>
             </ul>
            
         </div>
+        <div class="hidden teste ">
+            <img class="conf" src="./error-404.png" alt="">
+            <p class="texto-erro" >Faltou alguma coisa?</p>
+        </div>
     </main>
+    
 
     <script src="./main.js"></script>
     
